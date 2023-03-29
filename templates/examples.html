@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data API</title>
+</head>
+<body>
+
+<img src="{{url_for('static',filename='weather_api.png')}}" style="width:300px">
+
+<nav>
+    <button onclick="window.location.href='/';"> Home</button> &emsp;
+    <button onclick="window.location.href='/examples';"> Examples</button> &emsp;
+    <button onclick="window.location.href='/test';"> Test yourself</button> &emsp;
+</nav>
+
+<p> 1'st example: Get all stations from one country</p>
+<p>&emsp;
+    http://127.0.0.1:5000/country/ro
+    &emsp;
+</p>
+
+&emsp;
+<button onclick="window.open('http://127.0.0.1:5000/country/ro',
+                         'newwindow',
+                         'width=800,height=850') &emsp;">
+    Test
+</button>
+
+<p> 2'nd example: Get all data from one station</p>
+<p> &emsp;
+    http://127.0.0.1:5000/station/217
+    &emsp;
+</p>
+&emsp;
+<button onclick="window.open('http://127.0.0.1:5000/station/217','newwindow',
+                         'width=800,height=850') &emsp;">
+    Test
+</button>
+
+<p> 3'rd example: Get for specific station and date</p>
+<p> &emsp;
+    http://127.0.0.1:5000/spec-temp/217/1967-03-28
+    &emsp;
+</p>
+&emsp;
+<button onclick="window.open('http://127.0.0.1:5000/spec-temp/217/1981-03-28',
+                         'newwindow',
+                         'width=800,height=850') &emsp;">
+    Test
+</button>
+
+<p> 4'th example: Get station name by station ID</p>
+<p> &emsp;
+    http://127.0.0.1:5000/station-name/217
+    &emsp;
+</p>
+&emsp;
+<button onclick="window.open('http://127.0.0.1:5000/station-name/217',
+                         'newwindow',
+                         'width=800,height=850') &emsp;">
+    Test
+</button>
+
+<p> 5'th example: Get station ID by station name</p>
+<p> &emsp;
+    http://127.0.0.1:5000/station-id/ARAD
+    &emsp;
+</p>
+&emsp;
+<button onclick="window.open('http://127.0.0.1:5000/station-id/arad',
+                         'newwindow',
+                         'width=800,height=850') &emsp;">
+    Test
+</button>
+
+<p> 6'th example: Get from all years from specific station ID and date</p>
+<p> &emsp;
+    http://127.0.0.1:5000/yearly/217/03-28
+    &emsp;
+</p>
+&emsp;
+<button onclick="window.open('http://127.0.0.1:5000/yearly/217/03-28',
+                         'newwindow',
+                         'width=800,height=850') &emsp;">
+    Test
+</button>
+
+</body>
+
+</html>

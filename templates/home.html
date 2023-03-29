@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data API</title>
+
+</head>
+<body>
+
+<img src="{{url_for('static',filename='weather_api.png')}}" style="width:300px">
+
+<nav>
+    <button onclick="window.location.href='/';"> Home</button> &emsp;
+    <button onclick="window.location.href='/examples';"> Examples</button> &emsp;
+    <button onclick="window.location.href='/test';"> Test yourself</button> &emsp;
+</nav>
+
+<h2><p> API Specification</p></h2>
+
+<h5>
+    <p>Provide temperatures request from europe monitoring stations.</p>
+    <p> URL: http:127.0.0.1:5000/api/v1/{category}</p>
+    <p> Parameters: station, date, country, between dates </p>
+    <p> Station ID, Name and Country </p>
+
+    <p>{{data|safe}}</p>
+</h5>
+</body>
+
+</html>

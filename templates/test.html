@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data API</title>
+</head>
+<body>
+
+<img src="{{url_for('static',filename='weather_api.png')}}" style="width:300px">
+
+<nav>
+    <button onclick="window.location.href='/';"> Home</button> &emsp;
+    <button onclick="window.location.href='/examples';"> Examples</button> &emsp;
+    <button onclick="window.location.href='/test';"> Test yourself</button> &emsp;
+</nav>
+<p> URL format: http:127.0.0.1:5000/api/v1/station/date</p>
+<p> URL example: http:127.0.0.1:5000/api/v1/10/1993-08-15</p>
+<p>{{data|safe}}</p>
+
+
+</body>
+
+</html>
